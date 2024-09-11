@@ -26,3 +26,10 @@ h2{
     transition: filter .2s ease-in-out;
     cursor: pointer;
 }
+.btn:hover{
+    filter:grayscale();
+}
+.emoji-name{
+    font-weight: 600;
+    color: darkblue;
+}
