@@ -9,7 +9,12 @@ async function getEmoji(){
 
   data = await response.json()
 
-  console.log(data);
+  for (let i=0; i<1500;i++){
+    emoji.push({
+       emojiName: data[i].character,
+       emojiCode: data[i].unicodeName,
+    })
+  }
 }
 
 getEmoji()
